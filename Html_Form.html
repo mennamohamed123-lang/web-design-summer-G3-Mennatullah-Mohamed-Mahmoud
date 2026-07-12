@@ -1,0 +1,73 @@
+<!Doctype html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <body>
+
+        <fieldset>  
+        <form>
+            <h3>Register form</h3>
+            
+            <label> First Name:</label>
+            <input  type="text" name="firstName" placeholder="Enter your name"  maxlength="5"  pattern="[A-Za-z]+" required>
+            <br>
+
+            <label>Email:</label>
+            <input type="email" name="email"  placeholder="user@example.com" 
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+            <br>
+
+            <lable>phone:</lable>
+            <input type="tel" name="phone" 
+            pattern="^(010|011|012|015)[0-9]{8}$">
+            <br>
+
+            <lable>File:</lable>
+            <input type="file" name="image" accept=".png">
+            <br>
+
+            <label>comment:</label>
+           <textarea name="comment" min="100" max="200" placeholder="Write your comment here" required></textarea> 
+
+           <br>
+
+            <label>date:</label>
+            <input type="date" name="date" required>
+            <br>  
+
+            <label>gender:</label>
+            <input type="radio" name="gender" value="male"><label>Male</label>
+            <input type="radio" name="gender" value="female"><label>Female</label>
+            <br>
+
+            <label>Courses:</label>
+
+            <input list="courses" name="course" placeholder="Type course name">
+            <datalist id="courses">
+            <option value="HTML Course">
+            <option value="CSS Course">
+            <option value="JavaScript Course">
+            <option value="Python Course">
+            <option value="C++ Course">
+            <option value="Django Course">
+            <option value="React Course">
+            </datalist>   
+
+            <br>
+            <label>Tracks:</label>
+            <input type="checkbox" name="track"> <label>Frontend</label>
+            <input type="checkbox" name="track"> <label>Backend</label>
+            <input type="checkbox" name="track"> <label>Cyber security</label>
+
+            <br>
+            <input type="submit"> 
+            <input type="reset">
+   
+        </form>
+        </fieldset>
+    </body> 
+
+</html>
