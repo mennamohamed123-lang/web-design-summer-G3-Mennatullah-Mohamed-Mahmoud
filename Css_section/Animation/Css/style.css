@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+}
+
+.street{
+    position:relative;
+    width:100%;
+    height:100vh;
+}
+
+.road{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.car{
+    position:absolute;
+    bottom:300px;      
+    left:-250px;
+    animation: drive 6s linear infinite;
+    z-index:2;
+}
+
+.car-img{
+    width:300px;
+}
+
+@keyframes drive{
+    0%{
+        left:-250px;
+    }
+
+    100%{
+        left:100%;
+    }
+}
