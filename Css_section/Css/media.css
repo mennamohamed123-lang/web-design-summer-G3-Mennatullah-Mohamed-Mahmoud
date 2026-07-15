@@ -1,0 +1,224 @@
+/* ==========================================
+   Tablet
+========================================== */
+
+@media (max-width:991px){
+
+    .container{
+        width:94%;
+    }
+
+    nav{
+        padding:20px 4%;
+    }
+
+    ul{
+        gap:20px;
+    }
+
+    .section1{
+        margin-top:50px;
+    }
+
+    .section1 h1{
+        width:100%;
+        font-size:42px;
+    }
+
+    .section1 p{
+        width:75%;
+        font-size:15px;
+    }
+
+    .hero-images{
+        gap:15px;
+    }
+
+    .hero-images img{
+        height:250px;
+    }
+
+    .section2{
+        padding:40px 30px;
+    }
+
+    .section2 h2,
+    .product h2,
+    .banner h2{
+        font-size:30px;
+    }
+
+    .content{
+        justify-content:space-between;
+    }
+
+    .item{
+        width:45%;
+    }
+
+    /* إخفاء صورة اليوجا */
+    .woman{
+        display:none;
+    }
+
+    .product{
+        gap:25px;
+    }
+
+    .product img{
+        height:280px;
+    }
+
+    .banner{
+        height:250px;
+    }
+
+    .banner p{
+        width:80%;
+    }
+
+    footer{
+        flex-direction:column;
+        text-align:center;
+        gap:25px;
+    }
+
+    .footer-links{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .social-icons{
+        justify-content:center;
+    }
+
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width:767px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    ul{
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .container{
+        width:92%;
+    }
+
+    .section1{
+        margin-top:40px;
+    }
+
+    .section1 h1{
+        width:100%;
+        font-size:34px;
+    }
+
+    .section1 p{
+        width:100%;
+        font-size:14px;
+    }
+
+    .hero-images{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .hero-images img{
+        width:100%;
+        height:240px;
+    }
+
+    .section2{
+        padding:25px 20px;
+    }
+
+    .section2 h2{
+        text-align:center;
+        font-size:30px;
+        margin-bottom:30px;
+    }
+
+    .content{
+        flex-direction:column;
+        align-items:center;
+        gap:25px;
+    }
+
+    .item{
+        width:100%;
+        align-items:center;
+        text-align:center;
+    }
+
+    .item p{
+        text-align:center;
+    }
+
+    .woman{
+        display:none;
+    }
+
+    .product{
+        flex-direction:column;
+        gap:25px;
+    }
+
+    .product img,
+    .product div{
+        width:100%;
+    }
+
+    .product img{
+        height:260px;
+    }
+
+    .product h2{
+        font-size:30px;
+    }
+
+    .banner{
+        height:auto;
+        padding:60px 20px;
+    }
+
+    .banner h2{
+        text-align:center;
+        font-size:28px;
+    }
+
+    .banner p{
+        width:100%;
+    }
+
+    footer{
+        flex-direction:column;
+        text-align:center;
+        gap:25px;
+    }
+
+    .footer-logo{
+        align-items:center;
+    }
+
+    .footer-links{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .social-icons{
+        justify-content:center;
+    }
+
+}

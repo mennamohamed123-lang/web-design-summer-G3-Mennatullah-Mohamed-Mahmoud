@@ -1,0 +1,345 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+
+
+body{
+    background:white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 6%;
+}
+
+
+ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+
+a{
+    text-decoration:none;
+    color:#333;
+    font-size:14px;
+}
+
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+
+.circle{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:#ddd;
+}
+
+.container{
+    width:88%;
+    margin:auto;
+}
+
+.section1{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:70px;
+}
+
+
+.section1 h1{
+    width:90%;
+    font-size:55px;
+    line-height:1.2;
+}
+
+
+.section1 p{
+    width:50%;
+    color:#666;
+    margin:20px 0;
+    line-height:1.5;
+    font-size:14px;
+}
+
+
+.section1 button,
+.banner button{
+
+    border:none;
+    background:#28686c;
+    color:white;
+    padding:13px 45px;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+
+
+.hero-images{
+
+    display:flex;
+    gap:25px;
+    width:100%;
+    margin-top:50px;
+
+}
+
+
+.hero-images img{
+
+    width:50%;
+    height:300px;
+    object-fit:cover;
+    border-radius:12px;
+
+}
+
+.section2{
+
+    background:#f3f3f1;
+    margin-top:50px;
+    padding:55px;
+    border-radius:8px;
+
+}
+
+.section2 h2{
+
+    font-size:35px;
+    margin-bottom:40px;
+
+}
+
+.content{
+    display:flex;
+    align-items:flex-start;
+    gap:30px;
+}
+
+
+.item{
+    width:25%;
+    text-align:left;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+
+.item .fa-leaf{
+
+    width:55px;
+    height:55px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#28686c;
+    color:white;
+
+    font-size:22px;
+    border-radius:10px;
+
+    margin-bottom:15px;
+}
+
+
+.item p{
+    text-align:left;
+    color:#666;
+    line-height:1.6;
+}
+.woman{
+
+    width:250px;
+    margin-left:auto;
+
+}
+
+.product{
+
+    display:flex;
+    align-items:center;
+    gap:40px;
+    margin-top:60px;
+
+}
+
+.product img{
+
+    width:50%;
+    height:330px;
+    object-fit:cover;
+    border-radius:10px;
+
+}
+
+.product div{
+
+    width:50%;
+
+}
+
+.product h2{
+
+    font-size:35px;
+    margin-bottom:20px;
+
+}
+
+.product p{
+
+    color:#666;
+    line-height:1.6;
+
+}
+
+.points p{
+
+    margin-top:20px;
+
+}
+
+.points i{
+
+    color:#28686c;
+    margin-right:10px;
+
+}
+
+
+.banner{
+
+    margin-top:60px;
+    height:300px;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("../Photoes/garden.jpeg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    gap:20px;
+
+}
+
+
+
+.banner h2{
+
+    font-size:35px;
+
+}
+
+.banner p{
+
+    width:60%;
+    text-align:center;
+    line-height:1.6;
+    color:white;
+
+}
+
+footer{
+
+    margin-top:50px;
+
+    background:#28686c;
+
+    color:white;
+
+    padding:30px 6%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.footer-logo{
+
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+
+}
+
+.footer-logo .logo h3{
+
+    color:white;
+
+}
+
+.footer-links{
+
+    display:flex;
+    gap:25px;
+
+}
+
+.footer-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+}
+
+.social-icons{
+
+    display:flex;
+    gap:20px;
+
+}
+
+.social-icons i{
+
+    font-size:20px;
+    color:white;
+
+}
+
+.banner .fa-leaf{
+
+    width:55px;
+    height:55px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background: rgba(0, 0, 0, 0.5);
+    color:white;
+
+    font-size:22px;
+    border-radius:10px;
+
+    margin-bottom:15px;
+}

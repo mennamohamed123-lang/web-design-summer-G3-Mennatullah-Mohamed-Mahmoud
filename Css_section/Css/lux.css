@@ -391,7 +391,6 @@ button{
     margin-bottom:120px;
 }
 
-/* يخلي الصورة يمين في الصف الثاني */
 .reverse{
     flex-direction:row-reverse;
 }

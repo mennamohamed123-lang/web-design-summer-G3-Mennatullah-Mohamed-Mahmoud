@@ -45,7 +45,7 @@ a{
 
 
 .container{
-    background-image:url(/Css_section/Photoes/building.jpeg);
+    background-image:url(../Photoes/building.jpeg);
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -148,4 +148,3 @@ hr{
 
     cursor:pointer;
 }
-
