@@ -5,7 +5,6 @@
     font-family:sans-serif;
 }
 
-
 body{
     background:white;
 }
@@ -17,13 +16,11 @@ nav{
     padding:25px 6%;
 }
 
-
 ul{
     display:flex;
     list-style:none;
     gap:35px;
 }
-
 
 a{
     text-decoration:none;
@@ -31,13 +28,11 @@ a{
     font-size:14px;
 }
 
-
 .logo{
     display:flex;
     align-items:center;
     gap:8px;
 }
-
 
 .circle{
     width:20px;
@@ -59,13 +54,11 @@ a{
     margin-top:70px;
 }
 
-
 .section1 h1{
     width:90%;
     font-size:55px;
     line-height:1.2;
 }
-
 
 .section1 p{
     width:50%;
@@ -75,10 +68,8 @@ a{
     font-size:14px;
 }
 
-
 .section1 button,
 .banner button{
-
     border:none;
     background:#28686c;
     color:white;
@@ -87,259 +78,237 @@ a{
     cursor:pointer;
 }
 
-
-
 .hero-images{
-
     display:flex;
     gap:25px;
     width:100%;
     margin-top:50px;
-
 }
 
-
 .hero-images img{
-
     width:50%;
     height:300px;
     object-fit:cover;
     border-radius:12px;
-
 }
 
 .section2{
-
     background:#f3f3f1;
     margin-top:50px;
     padding:55px;
     border-radius:8px;
-
 }
 
 .section2 h2{
-
     font-size:35px;
     margin-bottom:40px;
-
 }
 
 .content{
     display:flex;
-    align-items:flex-start;
+    align-items:center;
     gap:30px;
 }
 
+.items{
+    display:flex;
+    gap:25px;
+    width:70%;
+}
 
 .item{
-    width:25%;
+    width:50%;
     text-align:left;
     display:flex;
     flex-direction:column;
     align-items:flex-start;
 }
 
-
-.item .fa-leaf{
-
+.icon-square{
     width:55px;
     height:55px;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
     background:#28686c;
     color:white;
-
     font-size:22px;
     border-radius:10px;
-
     margin-bottom:15px;
 }
 
-
 .item p{
-    text-align:left;
     color:#666;
     line-height:1.6;
+    font-size:14px;
 }
+
 .woman{
-
     width:250px;
+    height:250px;
+    object-fit:cover;
     margin-left:auto;
-
 }
 
 .product{
-
     display:flex;
     align-items:center;
     gap:40px;
     margin-top:60px;
-
 }
 
-.product img{
-
+.product > img{
     width:50%;
     height:330px;
     object-fit:cover;
     border-radius:10px;
-
 }
 
-.product div{
-
+.product-text{
     width:50%;
-
 }
 
 .product h2{
-
     font-size:35px;
     margin-bottom:20px;
-
 }
 
 .product p{
-
     color:#666;
     line-height:1.6;
-
 }
 
 .points p{
-
     margin-top:20px;
+    display:flex;
+    align-items:center;
+}
 
+.points span{
+    width:38px;
+    height:38px;
+    border:2px solid #28686c;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-right:10px;
 }
 
 .points i{
-
     color:#28686c;
-    margin-right:10px;
-
 }
-
 
 .banner{
-
     margin-top:60px;
-    height:300px;
-
+    height:400px;
     background-image:
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
     url("../image/garden.jpeg");
-
     background-size:cover;
     background-position:center;
-
     display:flex;
-    flex-direction:column;
-
     justify-content:center;
     align-items:center;
-
     color:white;
-    gap:20px;
-
+    text-align:center;
 }
 
-
+.banner-content{
+    width:70%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
 
 .banner h2{
-
     font-size:35px;
-
 }
 
 .banner p{
-
-    width:60%;
-    text-align:center;
     line-height:1.6;
-    color:white;
-
 }
 
-footer{
-
-    margin-top:50px;
-
-    background:#28686c;
-
-    color:white;
-
-    padding:30px 6%;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-}
-
-.footer-logo{
-
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-
-}
-
-.footer-logo .logo h3{
-
-    color:white;
-
-}
-
-.footer-links{
-
-    display:flex;
-    gap:25px;
-
-}
-
-.footer-links a{
-
-    color:white;
-
-    text-decoration:none;
-
-    font-size:14px;
-
-}
-
-.social-icons{
-
-    display:flex;
-    gap:20px;
-
-}
-
-.social-icons i{
-
-    font-size:20px;
-    color:white;
-
-}
-
-.banner .fa-leaf{
-
+.banner-icon{
     width:55px;
     height:55px;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
-    background: rgba(0, 0, 0, 0.5);
-    color:white;
-
-    font-size:22px;
+    background:rgba(0,0,0,0.5);
     border-radius:10px;
+    font-size:22px;
+}
 
-    margin-bottom:15px;
+.banner button{
+    background:transparent;
+    border:1px solid white;
+}
+
+.pink-card{
+    background:#fce4dc;
+    border-radius:12px;
+    padding:30px;
+    display:flex;
+    justify-content:space-around;
+    margin:-50px 10% 0;
+    position:relative;
+}
+
+.badge{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+.badge-icon{
+    width:50px;
+    height:50px;
+    border:2px solid #333;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+footer{
+    margin-top:0;
+    background:#28686c;
+    color:white;
+    padding:50px 6%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.footer-logo{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.footer-logo .logo h3{
+    color:white;
+}
+
+.footer-links{
+    display:flex;
+    gap:25px;
+}
+
+.footer-links a{
+    color:white;
+    font-size:14px;
+}
+
+.social-icons{
+    display:flex;
+    gap:20px;
+}
+
+.social-icons i{
+    font-size:20px;
+    color:white;
 }

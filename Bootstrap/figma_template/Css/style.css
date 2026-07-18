@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fcfcfc;
+  overflow-x: hidden;
+}
+
+.hero {
+  position: relative;
+  background-image: url("../image/dog.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  line-height: 1.1;
+}
+
+.hero-content p {
+  line-height: 1.6;
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.shop-accent-color {
+  color: #14233b !important;
+}
+
+.products-box {
+  background: white;
+}
+
+.product-tabs {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 5px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.product-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.btn-filter {
+  background: transparent;
+  color: #888888;
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  transition: .3s;
+}
+
+.btn-filter.active {
+  background: #14233b !important;
+  color: white !important;
+}
+
+.product-card {
+  background: #f8f9fa;
+  border: 1px solid #f1f3f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+.product-img {
+  width: 100%;
+  height: clamp(180px, 25vh, 290px);
+  object-fit: contain;
+}
+
+.view-more-btn:hover {
+  text-decoration: underline !important;
+}
+
+.services-box {
+  background: white;
+}
+
+.service-card {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .05);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card.responsive-height {
+  height: clamp(140px, 20vh, 220px);
+}
+
+.service-card.adoption-height {
+  height: 100%;
+  min-height: 300px;
+}
+
+.service-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    rgba(0, 0, 0, .15),
+    rgba(0, 0, 0, .6)
+  );
+}
+
+.service-title {
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+}
+
+@media (max-width: 991.98px) {
+  .service-card.adoption-height {
+    min-height: 200px;
+  }
+}
+
+.team-card {
+  transition: .3s;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-img-wrapper {
+  overflow: hidden;
+  border-radius: 10px;
+  background: #f1f3f5;
+}
+
+.team-img-wrapper img {
+  width: 100%;
+  height: clamp(160px, 25vh, 280px);
+  object-fit: cover;
+  transition: .3s;
+}
+
+.team-card:hover img {
+  transform: scale(1.05);
+}
+
+.team-socials a {
+  font-size: 14px;
+  color: white;
+  transition: .3s;
+}
+
+.team-socials a:hover {
+  color: #14233b !important;
+}
+
+footer.bg-dark {
+  background: #0e2851 !important;
+}
+
+.btn-contact {
+  background: #14233b;
+  border: 1px solid #14233b;
+  color: white;
+  transition: .3s;
+}
+
+.btn-contact:hover {
+  background: #0b1320;
+}
+
+.form-control:focus {
+  border-color: #14233b;
+  box-shadow: 0 0 0 .25rem rgba(20, 35, 59, .15);
+}
+
+.white-placeholder::placeholder {
+  color: white !important;
+  opacity: 1;
+}
+
+footer h6 {
+  color: white !important;
+}
+
+.footer-link {
+  color: white !important;
+  opacity: .8;
+  transition: .3s;
+}
+
+.footer-link:hover {
+  opacity: 1;
+}
+
+.footer-icon {
+  color: white !important;
+  opacity: .8;
+  transition: .3s;
+}
+
+.footer-icon:hover {
+  opacity: 1;
+}
+
+.btn {
+  transition: .3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+@media (min-width: 992px) {
+  .col-lg-1-8 {
+    flex: 0 0 auto;
+    width: 15%;
+  }
+}
